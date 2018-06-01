@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="Here’s what you need to do to set up your Windows machine. If you already think you have Python 3 installed, please check with a staff member before c">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="RP">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Setting Up Python on Windows"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Redmond Python User Group"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>Setting Up Python on Windows - Redmond Python User Group</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/sass/main.css">
+
+    <!--[if lt IE 8]>
+        <script src="/js/ie/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/sass/ie8.css">
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/sass/ie9.css">
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <span class="symbol"><img src="https://www.unixstickers.com/image/cache/data/stickers/python/python.sh-600x600.png" alt="" /></span><span class="title">Redmond Python User Group</span>
+        </a>
+
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        
+            <li>
+                <a href="/">Home</a>
+            </li>
+        
+            <li>
+                <a href="/machine-setup">Machine Setup</a>
+            </li>
+        
+            <li>
+                <a href="/onboarding">Onboarding</a>
+            </li>
+        
+            <li>
+                <a href="/workshop">Workshop</a>
+            </li>
+        
+            <li>
+                <a href="/practice">Practice</a>
+            </li>
+        
+            <li>
+                <a href="/projects">Projects</a>
+            </li>
+        
+            <li>
+                <a href="/about">Contributing</a>
+            </li>
+        
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+        
+    </ul>
+</nav>
+
+
+        <div id="main">
+            <div class="inner">
+
+                <!-- Main Content -->
+                
+
+    <h1>Setting Up Python on Windows</h1>
+
+
+
+<!-- Gallery -->
+
+
+<!-- Content -->
+<p>Here’s what you need to do to set up your Windows machine. If you already think you have Python 3 installed, please check with a staff member before completing these instructions.</p>
+<ol>
+<li>Open <a href="https://www.python.org/ftp/python/3.6.0/python-3.6.0-amd64.exe" target="_blank" rel="noopener">this Python download link</a>. Click “run” if prompted. Otherwise, save the file to your computer and double-click to start the installer.</li>
+<li>Windows may prompt you on whether you want to run or install Python. Click <strong>Run</strong> or <strong>Yes</strong> when these prompts may appear.</li>
+<li>Check the box to “Add Python 3.6 to PATH”.</li>
+<li>Click <strong>Install Now</strong>. This will also install IDLE (official Python IDE), pip (used to install Python packages), and documentation tools that will make your Python learning experience much easier. Follow the instructions to complete the installation, and click CLOSE when complete.</li>
+<li>Open a command prompt (we will be doing this multiple times, so make a note of how to do this!):<ul>
+<li><strong>Windows 8 or Windows 10</strong>: Open the Start Menu and search for “command prompt”</li>
+<li><strong>Windows 7 or Vista</strong>: Click on the Start menu (the Windows logo in the lower left of the screen), type <code>cmd</code> into the Search field directly above the Start menu button, and click “cmd” in the search results above the Search field.</li>
+<li><strong>Windows XP</strong>: Click Start menu, click “Run…”, type <code>cmd</code> into the text box, and hit enter.</li>
+</ul>
+</li>
+</ol>
+<p>You now have what’s called a command prompt. This command prompt is another way of navigating your computer and running programs – just textually instead of graphically. We are going to be running Python and Python scripts from this command prompt.</p>
+<ol start="3">
+<li><p>At the command prompt (which will look something like <code>C:\Users\username&gt;</code>, type:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python</span><br></pre></td></tr></table></figure>
+<p>You should see something that looks like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 08:06:12) [MSC v.1900 64 bit (AMD64)] on win32</span><br><span class="line">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+<p>You just started Python! The <code>&gt;&gt;&gt;</code> indicates that you are at a new type of prompt – a Python prompt. The command prompt lets you navigate your computer and run programs, and the Python prompt lets you write and run Python code interactively. If the number after Python is not 3 or greater, please tell an instructor or assistant.</p>
+</li>
+<li><p>To exit the Python shell, type <code>exit()</code> and hit enter.  You’ll now be back at the Windows command prompt (the <code>C:\</code> that you saw earlier).</p>
+</li>
+</ol>
+<h1 id="Prepare-a-Text-Editor"><a href="#Prepare-a-Text-Editor" class="headerlink" title="Prepare a Text Editor"></a>Prepare a Text Editor</h1><p>While you can absolutely write Python code in any text editor, it is a lot easier to use one that is aware of code content and provides relevant features. To that end, we’ll be using Sublime Text 3. While there are a multitude of other options, Sublime 3 provides a good blend of simplicity and functionality.</p>
+<ol>
+<li><a href="http://www.sublimetext.com/3" target="_blank" rel="noopener"><strong>Download Sublime Text here</strong></a>. Install as you would any other program.</li>
+<li><p>Be sure that you’ve set tabs equal to 4 spaces and the tabs to spaces setting is set to True. Add the lines below to the file under <strong>“Preferences” – “Settings - User”</strong>. Make sure that it is inside the curly braces at the top of your file.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">    // The number of spaces a tab is considered equal to</span><br><span class="line">    &quot;tab_size&quot;: 4,</span><br><span class="line"></span><br><span class="line">    // Set to true to insert spaces when tab is pressed</span><br><span class="line">    &quot;translate_tabs_to_spaces&quot;: true,</span><br><span class="line"></span><br><span class="line">    ... rest of file</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// The number of spaces a tab is considered equal to</span><br><span class="line">&quot;tab_size&quot;: 4,</span><br><span class="line"></span><br><span class="line">// Set to true to insert spaces when tab is pressed</span><br><span class="line">&quot;translate_tabs_to_spaces&quot;: true,</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>This ensures that when you hit the Tab button on your keyboard, your text editor will do the equivalent of typing four spaces.</p>
+<h1 id="Accessing-the-Python-Interpreter"><a href="#Accessing-the-Python-Interpreter" class="headerlink" title="Accessing the Python Interpreter"></a>Accessing the Python Interpreter</h1><p>Practice doing this a few times until you are comfortable entering and exiting the Python shell.</p>
+<ol>
+<li>Open a command prompt.</li>
+<li><p>To start Python, type <code>python</code> at the command prompt and hit enter. You should see something like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 08:06:12) [MSC v.1900 64 bit (AMD64)] on win32</span><br><span class="line">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+<p>The <code>&gt;&gt;&gt;</code> indicates that you are at a Python prompt.</p>
+</li>
+<li>Exit the Python prompt by typing <code>exit()</code> and hitting enter. Now you’re back at the Windows command prompt <code>C:\Users\username&gt;</code>.</li>
+</ol>
+<h1 id="Navigating-From-a-Command-Prompt"><a href="#Navigating-From-a-Command-Prompt" class="headerlink" title="Navigating From a Command Prompt"></a>Navigating From a Command Prompt</h1><p>The filesystem on your computer is like a tree made up of folders (also called “directories”) and files. The filesystem has a root directory called <code>/</code>, and everything on your computer lives in subdirectories of this root directory. We often navigate the filesystem graphically by clicking on graphical folders. We can do the exact same navigation from the command line.</p>
+<p>There are two commands that we’ll be using at a command prompt to navigate the filesystem on your computer:</p>
+<ul>
+<li><code>dir</code> - lists the contents of a directory.</li>
+<li><code>cd</code> - moves you into a new directory (it stands for “change directory”).</li>
+</ul>
+<p>Let’s practice using these commands. Open a command prompt, type each of these commands and hit enter:</p>
+<p><code>dir</code> - <em>This lists all the files in your home directory.</em><br><code>cd C:\</code> - <em>This will change you into the C:\ directory.</em><br><code>dir</code> - <em>This lists the contents of the C:\ directory.</em><br><code>cd Users</code> - <em>This will change you into the Users subdirectory of the C:\ directory.</em><br><code>dir</code> - <em>You should see the names of all the files and directories in C:\Users.</em><br><code>cd ..</code> - <em>The two dots mean “parent directory”, so this command moved you up to the parent directory. You were in <code>C:\Users</code>, so now you are in <code>C:\</code>, the root directory.</em><br><code>dir</code> - <em>This lists the contents of the current directory (root).</em></p>
+<h4 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h4><ul>
+<li>You can use Tab to auto-complete directory and file names. So from inside the root directory, if you type <code>cd Use</code> and hit Tab, the command prompt will auto-complete the directory name, and you can then hit enter to change into the <code>C:\Users</code> directory.</li>
+<li>The command prompt maintains a command history. You can use the up arrow to cycle through old commands. Note that the text that makes up the command prompt changes as you move around directories. The command prompt will always give the full directory path to your current directory.</li>
+</ul>
+<h4 id="Check-Your-Understanding"><a href="#Check-Your-Understanding" class="headerlink" title="Check Your Understanding"></a>Check Your Understanding</h4><p>Answer these questions. Experiment at the command line if you need to! If you aren’t sure about an answer, ask a helper.</p>
+<ul>
+<li>What directory are you in after starting a new command line prompt?</li>
+<li>After starting a new command line prompt, how would you get to the root directory?</li>
+<li>How do you check what files and directories are in your current working directory?</li>
+<li>If you are in directory <code>C:\Users</code>, and you want to get to <code>C:\Users\PythonWork\projects</code>, how would you do that?</li>
+<li>What are 2 ways to avoid typing out a full navigation command? (hint: one requires that you’ve run the command before)</li>
+<li>What is the difference between a command prompt and a Python prompt?</li>
+</ul>
+<h4 id="Success"><a href="#Success" class="headerlink" title="Success!"></a>Success!</h4><p>You’ve practiced using dir and cd to navigate your computer’s filesystem from the command prompt.</p>
+<h1 id="Start-Learning-Python"><a href="#Start-Learning-Python" class="headerlink" title="Start Learning Python!"></a>Start Learning Python!</h1><ul>
+<li>You may want to just quickly go through the <a href="/onboarding">onboarding page</a>.</li>
+<li>Go through this <a href="/day_one_tutorial/">self-directed tutorial</a> to start learning to read and write in Python. These concepts will be reviewed in the day two lesson, along with some more advanced topics.</li>
+</ul>
+<h2 id="Install-Dependencies-for-the-Projects"><a href="#Install-Dependencies-for-the-Projects" class="headerlink" title="Install Dependencies for the Projects"></a>Install Dependencies for the Projects</h2><ul>
+<li>Download the <a href="https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip" target="_blank" rel="noopener">Wordplay Project</a>.</li>
+<li>Download the <a href="https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip" target="_blank" rel="noopener">Colorwall Project</a> for Python 3.  </li>
+</ul>
+<h2 id="Practice"><a href="#Practice" class="headerlink" title="Practice"></a>Practice</h2><p>Try some <a href="/practice/">practice exercises</a>. If you’ve been working on any other tutorials, feel free to go to those too, and ask an instructor to help anywhere you get stuck.</p>
+<h2 id="Checkoff"><a href="#Checkoff" class="headerlink" title="Checkoff"></a>Checkoff</h2><p>When you’re ready, let an instructor or assistant know. Together you will go through the following check off steps:</p>
+<ol>
+<li>Start a new command prompt, and from that command prompt start Python 3. Then quit Python 3.</li>
+<li><p>Create a new Python file (with a <code>.py</code> extension). In that file, type the following and save the file. From a command prompt, navigate to this file and execute that Python script.</p>
+<p> <code>print(&quot;Hello world!&quot;)</code></p>
+</li>
+<li><p>Open your text editor and press <code>Tab</code>. Use the left arrow key to go back in that line and show that your text editor is using spaces to indent, not tabs.  </p>
+</li>
+<li>Test the Wordplay and ColorWall installations.<ul>
+<li>Navigate to the Wordplay directory. Run the <code>words1.py</code> script from your computer’s terminal. You should see a list of words that have two consecutive letter u’s.</li>
+<li>Navigate to the Colorwall directory. Run the <code>run.py</code> script from your computer’s terminal. You should see a grid with color animations that lasts about a minute.</li>
+</ul>
+</li>
+<li>Show the instructor a practice exercise that seemed particularly challenging and how you worked it out.</li>
+</ol>
+
+
+<!-- Comments -->
+<div>
+    
+    <hr />
+    <h3>Comments:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+</div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <section>
+            <h2>About</h2>
+            <div>
+                We are a Python meetup group in Redmond, WA, USA. Join us at <a href="https://www.meetup.com/Redmond-Python-User-Group/" target=_blank>Meetup.com</a>. Redmond Python is not affiliated with the <a href="https://www.python.org/" target=_blank>Python Software Foundation</a>, although we are big fans of their work.
+            </div>
+        </section>
+        <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+                
+                
+                
+                
+                
+                    <li><a href="https://github.com/mktp/rp2018" class="icon style2 fa-github" target="_blank" ><span class="label">GitHub</span></a></li>
+                
+                
+                
+                
+                
+                    <li><a href="www.meetup.com/Redmond-Python-User-Group" class="icon style2 fa-envelope-o" target="_blank" ><span class="label">Email</span></a></li>
+                
+                
+            </ul>
+        </section>
+        <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved</li>
+            <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+            <li>Hexo: <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></li>
+        </ul>
+    </div>
+</footer>
+    </div>
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- skel -->
+<script src="/js/skel.min.js"></script>
+
+<!-- Custom Code -->
+<script src="/js/util.js"></script>
+
+<!--[if lte IE 8]>
+<script src="/js/ie/respond.min.js"></script>
+<![endif]-->
+
+<!-- Custom Code -->
+<script src="/js/main.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'redmondpython';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+</body>
+
+</html>

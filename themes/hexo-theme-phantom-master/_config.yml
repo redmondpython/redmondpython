@@ -1,0 +1,59 @@
+# Header
+menu:
+  Home: /
+  Machine Setup: /machine-setup
+  Onboarding: /onboarding
+  Workshop: /workshop
+  Practice: /practice
+  Projects: /projects
+  Contributing: /about
+  Archives: /archives
+
+# Logo Image Source
+logo_src: https://www.unixstickers.com/image/cache/data/stickers/python/python.sh-600x600.png
+
+# Theme Main Subtitle
+subtitle_main: A Python meetup group in Redmond, WA. <br />Join us at <a href="https://www.meetup.com/Redmond-Python-User-Group/" target=_blank>Meetup.com</a>.
+
+# Theme Secondary subtitle
+susbtitle_secondary: We are a group of developers who meet every week in Redmond, WA. We are interested in learning about Python and sharing our knowledge with others. Some of us are professionals, some are hobbyists, but all of us are curious. We're always looking for new members and new perspectives.<ul><li><b>Step 1 </b>Join our weekly meetup <a href="https://www.meetup.com/Redmond-Python-User-Group/" target=_blank>here</a>.</li><li><b>Step 2 </b>Beginners can check out our <a href="/onboarding" target=_blank>onboarding guide</a>.</li><li><b>Step 3 </b>Read about what we've been doing below.</li></ul>
+
+# Footer About Section
+about_footer: We are a Python meetup group in Redmond, WA, USA. Join us at <a href="https://www.meetup.com/Redmond-Python-User-Group/" target=_blank>Meetup.com</a>. Redmond Python is not affiliated with the <a href="https://www.python.org/" target=_blank>Python Software Foundation</a>, although we are big fans of their work.
+
+# Default post title
+default_post_title: Redmondpython.com
+
+# Default post cover index page (Recommended)
+default_cover_index: "https://i.imgur.com/5cXV5xl.jpg"
+
+# Default post cover index page (Optional)
+# default_cover_detail: "https://i.imgur.com/5cXV5xl.jpg"
+
+# Show Dates for posts and pages
+show_dates:
+
+# Comments. Choose one by filling up the information
+comments:
+  # Disqus comments
+  disqus_shortname: redmondpython
+  # Facebook comments
+  facebook:
+    appid:
+    comment_count: 5
+    comment_colorscheme: light
+
+# Google Analytics Tracking ID
+google_analytics:
+
+# Social Accounts
+# twitter_url: https://twitter.com/?lang=en
+# facebook_url: https://www.facebook.com/
+# instagram_url: https://www.instagram.com/
+# dribble_url: https://dribbble.com/
+github_url: https://github.com/mktp/rp2018
+# googleplus_url: https://plus.google.com/
+# behance_url: https://www.behance.net/
+# fivehundredpx_url: https://500px.com/
+email_url: www.meetup.com/Redmond-Python-User-Group
+# rss_url: \#

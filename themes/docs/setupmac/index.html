@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="Important: While Macs come with Python 2.7.x pre-installed, but because Python 2’s end-of-life is just around the corner, we’ll be working with Python">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="RP">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Setting Up Python on Mac"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Redmond Python User Group"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>Setting Up Python on Mac - Redmond Python User Group</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/sass/main.css">
+
+    <!--[if lt IE 8]>
+        <script src="/js/ie/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/sass/ie8.css">
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/sass/ie9.css">
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <span class="symbol"><img src="https://www.unixstickers.com/image/cache/data/stickers/python/python.sh-600x600.png" alt="" /></span><span class="title">Redmond Python User Group</span>
+        </a>
+
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        
+            <li>
+                <a href="/">Home</a>
+            </li>
+        
+            <li>
+                <a href="/machine-setup">Machine Setup</a>
+            </li>
+        
+            <li>
+                <a href="/onboarding">Onboarding</a>
+            </li>
+        
+            <li>
+                <a href="/workshop">Workshop</a>
+            </li>
+        
+            <li>
+                <a href="/practice">Practice</a>
+            </li>
+        
+            <li>
+                <a href="/projects">Projects</a>
+            </li>
+        
+            <li>
+                <a href="/about">Contributing</a>
+            </li>
+        
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+        
+    </ul>
+</nav>
+
+
+        <div id="main">
+            <div class="inner">
+
+                <!-- Main Content -->
+                
+
+    <h1>Setting Up Python on Mac</h1>
+
+
+
+<!-- Gallery -->
+
+
+<!-- Content -->
+<p><strong>Important</strong>: While Macs come with Python 2.7.x pre-installed, but because Python 2’s end-of-life is just around the corner, we’ll be working with Python 3 during this session so there’s some light installation ahead of us. This will require administrative privileges on your computer since the Python installation is usually done to protected directories. Along the way, we’ll also set up a more advanced text editor that will help us by providing some really specific programming features.</p>
+<p>To install Python 3 for Mac:</p>
+<ol>
+<li>Download the package available here: <a href="https://www.python.org/ftp/python/3.6.0/python-3.6.0-macosx10.6.pkg" target="_blank" rel="noopener"><strong>Python 3.6.0 Installation Package for Mac</strong></a>.</li>
+<li>Double-click the downloaded file to start the installation process.</li>
+<li>Click through the wizard. The default settings are all fine to use. Close the wizard when complete. By default, the package installs into a central location which will require you to enter your system username and password during the process.</li>
+</ol>
+<h2 id="Accessing-the-Python-Interpreter"><a href="#Accessing-the-Python-Interpreter" class="headerlink" title="Accessing the Python Interpreter"></a>Accessing the Python Interpreter</h2><p>Let’s test that your installation went well by running the <code>python3</code> interpreter in the <code>Terminal</code>. Practice doing this a few times until you are comfortable entering and exiting the Python shell.</p>
+<ol>
+<li>Open Terminal.</li>
+<li><p>Enter the following into the terminal and press <code>enter</code>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python3</span><br></pre></td></tr></table></figure>
+<p>You should then see something like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Python 3.6.0 (v3.6.0:41df79263a11, Dec 22 2016, 17:23:13)</span><br><span class="line">[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin</span><br><span class="line">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</span><br><span class="line">&gt;&gt;&gt; quit()</span><br></pre></td></tr></table></figure>
+<p>While inside the python interpreter:</p>
+<ul>
+<li>The <code>&gt;&gt;&gt;</code> indicates that you are at a Python prompt.</li>
+<li>You can exit the Python prompt by typing <code>quit()</code> and pressing enter or by using <code>control+d</code>.</li>
+</ul>
+</li>
+</ol>
+<h1 id="Installing-a-Text-Editor-Sublime"><a href="#Installing-a-Text-Editor-Sublime" class="headerlink" title="Installing a Text Editor (Sublime)"></a>Installing a Text Editor (Sublime)</h1><p>While you can absolutely write Python code in any text editor, it is a lot easier to use one that is aware of code content and provides relevant features. To that end, we’ll be using Sublime Text 3. While there are a multitude of other options, Sublime 3 provides a good blend of simplicity and functionality.</p>
+<ul>
+<li><a href="http://www.sublimetext.com/3" target="_blank" rel="noopener"><strong>Download Sublime Text 3 from here</strong></a></li>
+</ul>
+<p>Once downloaded, install it as you would any other OS X application. Being explicit, this means double-clicking the downloaded <code>dmg</code> file, letting it open up, and subsequently dragging the <code>Sublime Text</code> application into your <code>Applications</code> folder.</p>
+<p>Be sure that you’ve set tabs equal to 4 spaces and the tabs to spaces setting is set to True.</p>
+<ol>
+<li>Go <strong>Sublime Text &gt; Preferences &gt; Settings</strong>.</li>
+<li><p>In the <code>Preferences.sublime - settings-User</code> file, paste the following. This ensures that when you hit the Tab button on your keyboard, your text editor will do the equivalent of typing four spaces.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">    // The number of spaces a tab is considered equal to</span><br><span class="line">    &quot;tab_size&quot;: 4,</span><br><span class="line"></span><br><span class="line">    // Set to true to insert spaces when tab is pressed</span><br><span class="line">    &quot;translate_tabs_to_spaces&quot;: true,</span><br><span class="line"></span><br><span class="line">    //... rest of file</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Save the file.</p>
+</li>
+</ol>
+<h1 id="Navigating-From-a-Terminal"><a href="#Navigating-From-a-Terminal" class="headerlink" title="Navigating From a Terminal"></a>Navigating From a Terminal</h1><p>The way your computer organizes storage is called a filesystem. This filesystem is organized like a tree with folders (also called <code>directories</code>) and <code>files</code>. The highest point in the tree is the <em>root</em> directory located at <code>/</code>. Everything you can access on your computer lives within the sub-directories of this root directory.</p>
+<p>We often navigate the filesystem graphically (using Finder) where we can click and move deeper and across this directory tree. We can do that exact same navigation from the command line.</p>
+<p>To do this, there are three commands that we’ll be using:</p>
+<ul>
+<li><code>ls</code> lists the contents of a directory (“what’s in this folder?”).</li>
+<li><code>pwd</code> prints the full directory path to your current directory. It stands for “print working directory.” (“where am I?”)</li>
+<li><code>cd</code> moves you into a new directory (it stands for “change directory”).<ul>
+<li><code>cd folder_name</code> - Go into <code>folder_name</code> directory.</li>
+<li><code>cd ..</code> - Go up one level in the folder heirarchy.</li>
+</ul>
+</li>
+</ul>
+<p>Let’s practice using these commands.</p>
+<ol>
+<li>Open up a Terminal (it’s under <code>Applications/Utilities</code>)</li>
+<li><p>Type each of these commands in order and hit <code>enter</code>:</p>
+<p><code>ls</code> - This lists all the files in your home directory.<br><code>pwd</code> - This displays the full directory path to your current directory, which is your home directory.<br><code>cd /</code> - This will change you into the <code>/</code> (root) directory.<br><code>ls</code> - This lists the contents of the <code>/</code> (root) directory.<br><code>cd Users</code> - This will change you into the home subdirectory of the <code>/</code> (root) directory.<br><code>ls</code> - You should see a list of all the computer’s users’ home directories (and possibly a Shared folder).<br><code>pwd</code> - This displays the full directory path to your current directory, which in this case is <code>/Users</code>.<br><code>cd ..</code> - <code>..</code> is a relative location meaning “parent directory”. You were in <code>/Users</code>, so now you have moved up to your “parent”, <code>/</code>, the root directory.<br><code>ls</code> - This lists the contents of the root directory, confirming where you are.<br><code>cd ~</code> - Just like how <code>..</code> means “parent directory”, <code>~</code> means “home” directory. When you execute this command, you’ll change back to your home directory, where all your user files are.</p>
+</li>
+</ol>
+<h4 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h4><ol>
+<li>You can use <code>tab</code> to auto-complete directories, files, and programs. So from inside the root directory <code>/</code>, if you type <code>cd Us</code> and press the <code>tab</code> key, the command prompt will auto-complete the directory name, and you can then hit <code>enter</code> to change into the <code>/Users</code> directory.</li>
+<li>The command prompt maintains a command history. You can use the up arrow to cycle through old commands. You can also see a list of your history by using the <code>history</code> command.</li>
+<li>If you’d like to open a Finder window wherever you are in the Terminal, you can use the <code>open .</code> command. Turns out <code>.</code> is another “special place” that means “the current directory”. So this command opens the current directory, which OS X generally does with the help of Finder.</li>
+<li>If you’d like to change to a specific location in the Terminal, and you have a Finder window open already to that place, you can type in <code>cd</code> to the Terminal, drag the little blue folder at the top of the Finder window into the Terminal, and then press <code>enter</code>.</li>
+</ol>
+<h4 id="Check-Your-Understanding"><a href="#Check-Your-Understanding" class="headerlink" title="Check Your Understanding"></a>Check Your Understanding</h4><p>Answer these questions. Experiment at the command line if you need to! If you aren’t sure about an answer, ask a helper.</p>
+<ul>
+<li>What directory are you in after starting a new command line prompt?</li>
+<li>After starting a new command line prompt, how would you get to the root directory?</li>
+<li>How do you check what files and directories are in your current working directory?</li>
+<li>If you are in directory <code>/</code>, and you want to get to <code>/Users/Shared/</code>, how would you do that?</li>
+<li>What are 2 ways to avoid typing out a full navigation command? (hint: one requires that you’ve run the command before)</li>
+<li>What is the difference between a command prompt and a Python prompt?</li>
+</ul>
+<h4 id="Success"><a href="#Success" class="headerlink" title="Success!"></a>Success!</h4><p>You’ve practiced using <code>ls</code> and <code>cd</code> to navigate your computer’s filesystem using Terminal.</p>
+<h1 id="Start-learning-Python"><a href="#Start-learning-Python" class="headerlink" title="Start learning Python!"></a>Start learning Python!</h1><ul>
+<li>You may want to just quickly go through the <a href="/onboarding">onboarding page</a>.</li>
+<li>Go through this <a href="/day_one_tutorial/">self-directed tutorial</a> to start learning to read and write in Python. These concepts will be reviewed in the day two lesson, along with some more advanced topics.</li>
+</ul>
+<h2 id="Install-Dependencies-for-the-Projects"><a href="#Install-Dependencies-for-the-Projects" class="headerlink" title="Install Dependencies for the Projects"></a>Install Dependencies for the Projects</h2><ul>
+<li>Download the <a href="https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip" target="_blank" rel="noopener">Wordplay Project</a>.</li>
+<li>Download the <a href="https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip" target="_blank" rel="noopener">Colorwall Project</a> for Python 3.  </li>
+</ul>
+<h2 id="Practice"><a href="#Practice" class="headerlink" title="Practice"></a>Practice</h2><p>Try some <a href="/practice/">practice exercises</a>. If you’ve been working on any other tutorials, feel free to go to those too, and ask an instructor to help anywhere you get stuck.</p>
+<h2 id="Checkoff"><a href="#Checkoff" class="headerlink" title="Checkoff"></a>Checkoff</h2><p>When you’re ready, let an instructor or assistant know. Together you will go through the following check off steps:</p>
+<ol>
+<li>Start a new command prompt, and from that command prompt start Python 3. Then quit Python 3.</li>
+<li><p>Create a new Python file (with a <code>.py</code> extension). In that file, type the following and save the file. From a command prompt, navigate to this file and execute that Python script.</p>
+<p> <code>print(&quot;Hello world!&quot;)</code></p>
+</li>
+<li><p>Open your text editor and press <code>Tab</code>. Use the left arrow key to go back in that line and show that your text editor is using spaces to indent, not tabs.  </p>
+</li>
+<li>Test the Wordplay and ColorWall installations.<ul>
+<li>Navigate to the Wordplay directory. Run the <code>words1.py</code> script from your computer’s terminal. You should see a list of words that have two consecutive letter u’s.</li>
+<li>Navigate to the Colorwall directory. Run the <code>run.py</code> script from your computer’s terminal. You should see a grid with color animations that lasts about a minute.</li>
+</ul>
+</li>
+<li>Show the instructor a practice exercise that seemed particularly challenging and how you worked it out.</li>
+</ol>
+
+
+<!-- Comments -->
+<div>
+    
+    <hr />
+    <h3>Comments:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+</div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <section>
+            <h2>About</h2>
+            <div>
+                We are a Python meetup group in Redmond, WA, USA. Join us at <a href="https://www.meetup.com/Redmond-Python-User-Group/" target=_blank>Meetup.com</a>. Redmond Python is not affiliated with the <a href="https://www.python.org/" target=_blank>Python Software Foundation</a>, although we are big fans of their work.
+            </div>
+        </section>
+        <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+                
+                
+                
+                
+                
+                    <li><a href="https://github.com/mktp/rp2018" class="icon style2 fa-github" target="_blank" ><span class="label">GitHub</span></a></li>
+                
+                
+                
+                
+                
+                    <li><a href="www.meetup.com/Redmond-Python-User-Group" class="icon style2 fa-envelope-o" target="_blank" ><span class="label">Email</span></a></li>
+                
+                
+            </ul>
+        </section>
+        <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved</li>
+            <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+            <li>Hexo: <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></li>
+        </ul>
+    </div>
+</footer>
+    </div>
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- skel -->
+<script src="/js/skel.min.js"></script>
+
+<!-- Custom Code -->
+<script src="/js/util.js"></script>
+
+<!--[if lte IE 8]>
+<script src="/js/ie/respond.min.js"></script>
+<![endif]-->
+
+<!-- Custom Code -->
+<script src="/js/main.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'redmondpython';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="Review Day 1 material
+math
+type()
+variables
+strings
+booleans
+if/elif/else
+functions
+
+lists
+purpose
+initialization
+len() review
+accessing elements
+addi">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="RP">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Workshop - Part 2"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Redmond Python User Group"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>Workshop - Part 2 - Redmond Python User Group</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/sass/main.css">
+
+    <!--[if lt IE 8]>
+        <script src="/js/ie/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/sass/ie8.css">
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/sass/ie9.css">
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <span class="symbol"><img src="https://www.unixstickers.com/image/cache/data/stickers/python/python.sh-600x600.png" alt="" /></span><span class="title">Redmond Python User Group</span>
+        </a>
+
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        
+            <li>
+                <a href="/">Home</a>
+            </li>
+        
+            <li>
+                <a href="/machine-setup">Machine Setup</a>
+            </li>
+        
+            <li>
+                <a href="/onboarding">Onboarding</a>
+            </li>
+        
+            <li>
+                <a href="/workshop">Workshop</a>
+            </li>
+        
+            <li>
+                <a href="/practice">Practice</a>
+            </li>
+        
+            <li>
+                <a href="/projects">Projects</a>
+            </li>
+        
+            <li>
+                <a href="/about">Contributing</a>
+            </li>
+        
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+        
+    </ul>
+</nav>
+
+
+        <div id="main">
+            <div class="inner">
+
+                <!-- Main Content -->
+                
+
+    <h1>Workshop - Part 2</h1>
+
+
+
+<!-- Gallery -->
+
+
+<!-- Content -->
+<h2 id="Review-Day-1-material"><a href="#Review-Day-1-material" class="headerlink" title="Review Day 1 material"></a>Review Day 1 material</h2><ul>
+<li>math</li>
+<li>type()</li>
+<li>variables</li>
+<li>strings</li>
+<li>booleans</li>
+<li>if/elif/else</li>
+<li>functions</li>
+</ul>
+<h2 id="lists"><a href="#lists" class="headerlink" title="lists"></a>lists</h2><ul>
+<li>purpose</li>
+<li>initialization</li>
+<li>len() review</li>
+<li>accessing elements</li>
+<li>adding elements</li>
+<li>changing elements</li>
+<li>slicing lists</li>
+</ul>
+<h2 id="tuples"><a href="#tuples" class="headerlink" title="tuples"></a>tuples</h2><ul>
+<li>like lists but immutable</li>
+<li>can perform all the same operations except changing elements</li>
+<li>strings are like tuples - can slice, access elements, can not change elements</li>
+</ul>
+<h2 id="loops-and-more-flow-control"><a href="#loops-and-more-flow-control" class="headerlink" title="loops and more flow control"></a>loops and more flow control</h2><ul>
+<li>for loops</li>
+<li>if statements inside for loops</li>
+<li>nested for loops</li>
+<li>range()</li>
+<li>while loops</li>
+<li>infinite loops</li>
+<li>if statements inside while loops</li>
+<li>break</li>
+<li>input()</li>
+</ul>
+<h2 id="dictionaries"><a href="#dictionaries" class="headerlink" title="dictionaries"></a>dictionaries</h2><ul>
+<li>purpose</li>
+<li>initialization</li>
+<li>accessing elements</li>
+<li>adding elements</li>
+<li>changing elements</li>
+<li>keys() and values()</li>
+</ul>
+<h2 id="modules"><a href="#modules" class="headerlink" title="modules"></a>modules</h2><ul>
+<li>purpose</li>
+<li>builtins</li>
+<li>imports<ul>
+<li>math<ul>
+<li>math.pi</li>
+<li>math.sqrt()    </li>
+</ul>
+</li>
+<li>random<ul>
+<li>random.randint()</li>
+<li>random.choice()</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Let’s-put-it-all-together"><a href="#Let’s-put-it-all-together" class="headerlink" title="Let’s put it all together"></a>Let’s put it all together</h2><p>Walk through <a href="/code/capitals.py">state_capitals.py</a>. Copy and paste this whole file in your text editor and save it as <code>state_capitals.py</code>.</p>
+<ul>
+<li>create a dictionary of states &amp; capitals </li>
+<li>import a module</li>
+<li>write a while loop </li>
+<li>select a random key and value from the list</li>
+<li>take user input to guess state capital</li>
+<li>evaluate user’s input &amp; respond</li>
+<li>allow user to end game</li>
+</ul>
+<h3 id="Practice-exercises"><a href="#Practice-exercises" class="headerlink" title="Practice exercises"></a>Practice exercises</h3><h4 id="Exercise-1-as-a-class"><a href="#Exercise-1-as-a-class" class="headerlink" title="Exercise 1 (as a class)"></a>Exercise 1 (as a class)</h4><ol>
+<li>Write a function that simulates the roll of two standard six sided die. </li>
+<li>Save it to a file called <code>dice_roll.py</code>.</li>
+<li>Open a Python interpreter from that same directory and <code>import dice_roll</code> and run the function inside your Python interpreter.</li>
+</ol>
+<h4 id="Exercise-2-individual-work"><a href="#Exercise-2-individual-work" class="headerlink" title="Exercise 2 (individual work)"></a>Exercise 2 (individual work)</h4><ol>
+<li>Write a function that takes one argument.  <ul>
+<li>If the argument is a list, it returns a random item from that list - simulating drawing a person’s name from a hat.  </li>
+<li>If the argument is not a list, it returns the message <code>The argument must be a list.</code></li>
+</ul>
+</li>
+<li>Save the file and run it inside your Python interpreter.</li>
+</ol>
+
+
+<!-- Comments -->
+<div>
+    
+    <hr />
+    <h3>Comments:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+</div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <section>
+            <h2>About</h2>
+            <div>
+                We are a Python meetup group in Redmond, WA, USA. Join us at <a href="https://www.meetup.com/Redmond-Python-User-Group/" target=_blank>Meetup.com</a>. Redmond Python is not affiliated with the <a href="https://www.python.org/" target=_blank>Python Software Foundation</a>, although we are big fans of their work.
+            </div>
+        </section>
+        <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+                
+                
+                
+                
+                
+                    <li><a href="https://github.com/mktp/rp2018" class="icon style2 fa-github" target="_blank" ><span class="label">GitHub</span></a></li>
+                
+                
+                
+                
+                
+                    <li><a href="www.meetup.com/Redmond-Python-User-Group" class="icon style2 fa-envelope-o" target="_blank" ><span class="label">Email</span></a></li>
+                
+                
+            </ul>
+        </section>
+        <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved</li>
+            <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+            <li>Hexo: <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></li>
+        </ul>
+    </div>
+</footer>
+    </div>
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- skel -->
+<script src="/js/skel.min.js"></script>
+
+<!-- Custom Code -->
+<script src="/js/util.js"></script>
+
+<!--[if lte IE 8]>
+<script src="/js/ie/respond.min.js"></script>
+<![endif]-->
+
+<!-- Custom Code -->
+<script src="/js/main.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'redmondpython';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+</body>
+
+</html>

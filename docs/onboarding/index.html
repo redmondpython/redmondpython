@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="OverviewWelcome!
+If you are reading this page, you have expressed an interest in attending the Redmond Python Meetup. The Redmond Python Meetup is for">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="RP">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Redmond Python Meetup Onboarding"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Redmond Python User Group"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>Redmond Python Meetup Onboarding - Redmond Python User Group</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/sass/main.css">
+
+    <!--[if lt IE 8]>
+        <script src="/js/ie/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/sass/ie8.css">
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/sass/ie9.css">
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <span class="symbol"><img src="https://www.unixstickers.com/image/cache/data/stickers/python/python.sh-600x600.png" alt="" /></span><span class="title">Redmond Python User Group</span>
+        </a>
+
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        
+            <li>
+                <a href="/">Home</a>
+            </li>
+        
+            <li>
+                <a href="/machine-setup">Machine Setup</a>
+            </li>
+        
+            <li>
+                <a href="/onboarding">Onboarding</a>
+            </li>
+        
+            <li>
+                <a href="/workshop">Workshop</a>
+            </li>
+        
+            <li>
+                <a href="/practice">Practice</a>
+            </li>
+        
+            <li>
+                <a href="/projects">Projects</a>
+            </li>
+        
+            <li>
+                <a href="/about">Contributing</a>
+            </li>
+        
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+        
+    </ul>
+</nav>
+
+
+        <div id="main">
+            <div class="inner">
+
+                <!-- Main Content -->
+                
+
+    <h1>Redmond Python Meetup Onboarding</h1>
+
+
+
+<!-- Gallery -->
+
+
+<!-- Content -->
+<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>Welcome!</p>
+<p>If you are reading this page, you have expressed an interest in attending the Redmond Python Meetup. The Redmond Python Meetup is for <em>everyone</em>–from new programmers to experienced developers.</p>
+<p>This page will walk you through the following:</p>
+<ul>
+<li>How to install Python on your computer</li>
+<li>How to use the Python Interpreter to run Python code</li>
+<li>How to write and manipulate basic Python data types, functions, and loops</li>
+</ul>
+<p>At this point, you probably fall into one of three categories based on your experience level:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Experience Level</th>
+<th>Recommendation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">“I’m brand new to development and Python.”</td>
+<td>Come to the meetup for a guided on-boarding session with our TAs where you can complete this page and ask questions as you go. If you’re feeling adventurous, you can start with installation below and try to get as far as you can.</td>
+</tr>
+<tr>
+<td style="text-align:center">“I’m new to Python but I have some programming experience.”</td>
+<td>Feel free to get as far as you can on this page and come to the meetup with questions, or you can come to the meetup and do an on-boarding session with our TAs.</td>
+</tr>
+<tr>
+<td style="text-align:center">“I’m an experience developer”</td>
+<td>Feel free to go through this page on your own and come to the meetup with any questions</td>
+</tr>
+</tbody>
+</table>
+<h2 id="About-Python"><a href="#About-Python" class="headerlink" title="About Python"></a>About Python</h2><p>Python is an easy-to-write, easy-to-read interpreted scripting language. “Hello world!” is one line and looks like this:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">"Hello world!"</span>)</span><br><span class="line">Hello world!</span><br></pre></td></tr></table></figure>
+<p>Here is a more complex example application that sends an email. It’s still only 5 lines, though.</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> smtplib</span><br><span class="line">server = smtplib.SMTP(<span class="string">"smtp.gmail.com"</span>, <span class="number">587</span>)</span><br><span class="line">server.login(<span class="string">"youremailusername"</span>, <span class="string">"password"</span>)</span><br><span class="line">msg = <span class="string">"/nHello!"</span></span><br><span class="line">server.sendmail(<span class="string">"you@gmail.com"</span>, <span class="string">"yourFriend@hotmail.com"</span>, msg)</span><br></pre></td></tr></table></figure>
+<p>The above code does the following:</p>
+<ol>
+<li>Imports some code in an external module (code that we didn’t write, but that are nevertheless using).</li>
+<li>Creates an SMTP object to connect to a server.</li>
+<li>Logs in to the server.</li>
+<li>Creates our message.</li>
+<li>Sends the message.</li>
+</ol>
+<p>You don’t need to understand this syntax at this time. The purpose of this example is simply to show you what you can accomplish in a few lines of Python code, which may take dozens of lines in other programming languages.</p>
+<h2 id="Basic-Python-Features"><a href="#Basic-Python-Features" class="headerlink" title="Basic Python Features"></a>Basic Python Features</h2><p>There are a few characteristics of Python that you should remember:</p>
+<ul>
+<li><strong>Python is open source</strong>: Anyone can see all of the underlying code and everyone has the chance to contribute to the code base.</li>
+<li><strong>Python is object-oriented</strong>: Everything in Python is an object.</li>
+<li><strong>Python is platform-independent</strong>: You can write an application on one operating system and run it on another.</li>
+<li><strong>Python has a minimalist design philosophy</strong>: This emphasizes cleanliness and readability, with minimal semicolons and brackets.</li>
+</ul>
+<h2 id="What-kinds-of-things-can-you-do-with-Python"><a href="#What-kinds-of-things-can-you-do-with-Python" class="headerlink" title="What kinds of things can you do with Python?"></a>What kinds of things can you do with Python?</h2><p>The sky is the limit, but here are some examples:</p>
+<ul>
+<li>Interact with files on your computer</li>
+<li>Automate tasks as part of a workflow</li>
+<li>Scrape data off a website</li>
+<li>Build and deploy REST APIs</li>
+<li>Build games</li>
+<li>Interact with cloud services (AWS, Azure, Google, etc.)</li>
+</ul>
+<h1 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h1><h2 id="Installing-Python"><a href="#Installing-Python" class="headerlink" title="Installing Python"></a>Installing Python</h2><p>Let’s first get Python installed on your computer. There are two major versions of Python out there in the wild right now: Python 2 and Python 3. Python 2 is retiring in 2020, so we’ll be using Python 3.</p>
+<p>In fact, you might already have one of these versions installed on your computer. Let’s check:</p>
+<ol>
+<li>Open a terminal or command prompt.<ul>
+<li><strong>WIN</strong>: Start Menu &gt; Command Prompt.</li>
+<li><strong>MAC/LIN</strong>: Application &gt; Terminal.</li>
+</ul>
+</li>
+<li><p>Type <code>python</code> and hit <strong>ENTER</strong>. Do you see something like this? It means you have Python 3 installed on your computer.</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Python 3.6.4 (default, Jan  3 2018, 12:27:09)</span><br><span class="line">[GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)] on darwin</span><br><span class="line">Type <span class="string">"help"</span>, <span class="string">"copyright"</span>, <span class="string">"credits"</span> or <span class="string">"license"</span> <span class="keyword">for</span> more information.</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+<p> If you get an error, you probably need to install Python. Note that you may have Python 2 installed (it will say <code>Python 2.x.x</code>), in which case you’ll want to install Python 3.</p>
+</li>
+</ol>
+<p>See the following pages for platform-specific instructions on installing Python:</p>
+<ul>
+<li><a href="/setupwindows">Windows</a></li>
+<li><a href="/setupmac/">MacOS</a></li>
+<li><a href="/setuplinux/">Linux</a></li>
+</ul>
+<p>When you’re finished, come back here and continue to the next section.</p>
+<h2 id="Using-the-Python-Interpreter"><a href="#Using-the-Python-Interpreter" class="headerlink" title="Using the Python Interpreter"></a>Using the Python Interpreter</h2><p>Now that we have Python installed, let’s open the Python interpreter. The interpreter is a small application that let’s us type some Python and execute it easily:</p>
+<ol>
+<li>Open a terminal or command prompt like you did in the previous section.</li>
+<li>Type <code>python</code> and hit <strong>ENTER</strong>.</li>
+</ol>
+<p>Your prompt should look something like the following (if it doesn’t, let a TA know):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Python 3.6.4 (default, Jan  3 2018, 12:27:09)</span><br><span class="line">[GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)] on darwin</span><br><span class="line">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure></p>
+<p>You’ll know you’re in the Python interpreter when you see this prompt:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure></p>
+<p>This means the Python interpreter is ready for your input. We can type Python code directly into this prompt and it will execute. Note that as you go through this on-boarding page, you’ll see code samples like this:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; a = &quot;Hello&quot;</span><br></pre></td></tr></table></figure></p>
+<p>This means that you can type this line in at the <code>&gt;&gt;&gt;</code> prompt. Simply enter the line of code, hit <strong>Enter</strong> after every line you enter, and note the output (although sometimes there won’t be any!).</p>
+<p><strong>Tip</strong>: Don’t copy and paste commands – type them out. You’ll learn far more if you take the time to type everything yourself.</p>
+<p>To exit the interpreter:</p>
+<ol>
+<li>Type <code>exit()</code> or hit <code>ctrl+d</code> to exit the Python interpreter and return to the computer’s terminal.</li>
+<li>Now, reopen the Python interpreter. A key point here is that everything that you entered in that previous Python interpreter session is <strong>lost</strong> between sessions. <strong>The data does NOT persist</strong>.</li>
+</ol>
+<p>For now, we’ll just be working with Python via the interpreter while we learn the basics. We’ll show you later how to write lines of code in a file and run a full Python script at the command line.</p>
+<h1 id="Getting-Started-with-Python-Code"><a href="#Getting-Started-with-Python-Code" class="headerlink" title="Getting Started with Python Code"></a>Getting Started with Python Code</h1><h2 id="Basic-Operations"><a href="#Basic-Operations" class="headerlink" title="Basic Operations"></a>Basic Operations</h2><p>Let’s do some basic operations in Python to teach you how to interact with the Python interpreter.</p>
+<ol>
+<li>Open the Python interpreter like we showed you in the previous section.</li>
+<li><p>Type the following lines, noting the output:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">2</span> + <span class="number">4</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">5</span> - <span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">3</span> * <span class="number">4</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">10</span> / <span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p>Awesome! This is how easy it is to write and execute Python. This also introduces you to some basic math operations available to you in Python like addition, subtraction, etc. We’ll expand on those later.</p>
+<p>Now try these:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">2</span>+<span class="number">4</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">5</span><span class="number">-1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">3</span>*<span class="number">4</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">10</span>/<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p>Same operations as before. Note that the whitespace between values, in this case, doesn’t matter. In Python, <code>2+4</code> is the same as <code>2 + 4</code>.</p>
+</li>
+</ol>
+<h2 id="Variables"><a href="#Variables" class="headerlink" title="Variables"></a>Variables</h2><p>Next, let’s introduce variables. Variables are used to store values–numbers, words, lists of numbers and words, etc. This allows us to reference these variables later in our application. Imagine if you were writing an application and wanted to display your company name in 20 different places. Instead of writing your company name out 20 times, you can write it once and store it in a variable, and then reference the variable wherever you need it.</p>
+<h3 id="Storing-Numbers"><a href="#Storing-Numbers" class="headerlink" title="Storing Numbers"></a>Storing Numbers</h3><p>Let’s create a few variables that store some simple numbers. We’ll use the <code>=</code> symbol to store values. This equals sign is formally called the <strong>assignment operator</strong>.<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>x = <span class="number">4</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>y = <span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(x + y)</span><br></pre></td></tr></table></figure></p>
+<p>What did we just do?</p>
+<ol>
+<li>We assigned the number 4 to the variable “x” and the number 2 to “y”.</li>
+<li>We then called the “print” function to print the sum. <code>print()</code> is a built-in function that we can access anywhere, and always prints the contents out to the console.</li>
+</ol>
+<p>For experienced developers, note that we don’t have to tell the interpreter that our variables are numbers. We just assign and run. Python will assign the type automatically when we run our program (“at runtime”).</p>
+<h2 id="Storing-Strings"><a href="#Storing-Strings" class="headerlink" title="Storing Strings"></a>Storing Strings</h2><p>Numbers are great, but let’s try entering some strings of text. Go ahead and type the following, replacing the value for the <code>name</code> variable with your name below:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>name = <span class="string">'Your Name'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(name)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>fav_food = <span class="string">"Pasta"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(fav_food)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>long_multiline_string = <span class="string">"""When in the Course of human events it becomes necessary for one people to dissolve the political bands which have connected them with another and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation."""</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(long_multiline_string)</span><br></pre></td></tr></table></figure></p>
+<p>Notice the use of quotes–single, double, or triple quotes are acceptable in Python. Just be consistent throughout your application! To keep things simple, we’ll use double quotes and all of our variables will start with a lowercase letter for now. We’ll be expanding on variables and functions later.</p>
+<blockquote>
+<p><em>Remember</em>: Once you close the interpreter, all of this data is lost.</p>
+</blockquote>
+<h2 id="Numbers"><a href="#Numbers" class="headerlink" title="Numbers"></a>Numbers</h2><p>There are two number data types in Python 3:</p>
+<ul>
+<li><strong>integers</strong>: Whole numbers with no decimal point (e.g. 1, 2, -504803, 6238746289374692837649283764829).</li>
+<li><strong>floats</strong>: Written with a decimal point dividing the integer and fractional parts (e.g. .5, 842.32, .000238923).</li>
+</ul>
+<p>Math in Python looks a lot like math with a calculator. Type the following into the interpreter.</p>
+<h3 id="Addition"><a href="#Addition" class="headerlink" title="Addition"></a>Addition</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">2</span> + <span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1.65</span> + <span class="number">2.15</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">2</span> + <span class="number">1.65</span></span><br></pre></td></tr></table></figure>
+<h3 id="Subtraction"><a href="#Subtraction" class="headerlink" title="Subtraction"></a>Subtraction</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">12</span> - <span class="number">5</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">45.9</span> - <span class="number">25.3</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">2</span> - <span class="number">-4</span></span><br></pre></td></tr></table></figure>
+<h3 id="Multiplication"><a href="#Multiplication" class="headerlink" title="Multiplication"></a>Multiplication</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">6</span> * <span class="number">7</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">5.6</span> * <span class="number">4.3</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">6</span> * <span class="number">-5</span></span><br></pre></td></tr></table></figure>
+<h3 id="Division"><a href="#Division" class="headerlink" title="Division"></a>Division</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">12</span>/<span class="number">3</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">16</span>/<span class="number">5</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">10</span>/<span class="number">-5</span></span><br></pre></td></tr></table></figure>
+<p>If you’ve used Python 2, you’ll see that division works differently in Python 3. Python 2 uses floor division for integers, meaning it will return only the whole number part of the answer. Python 3 performs true division, returning the real or true value of the division. Try the following, one with one <code>/</code> and the other with two <code>//</code>:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">16</span>/<span class="number">5</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">16</span>//<span class="number">5</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="Modulus"><a href="#Modulus" class="headerlink" title="Modulus"></a>Modulus</h3><p>Thinking back to long division that you may have learned in school, the modulus is the “remainder” after performing division. It uses the % symbol.<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">16</span>%<span class="number">5</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">50</span>%<span class="number">4</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="Order-of-Operations"><a href="#Order-of-Operations" class="headerlink" title="Order of Operations"></a>Order of Operations</h3><p>Order of operations works just like you learned in math class - Parentheses, Exponents, Multiplication, Division, Addition, Subtraction.<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">5</span> + <span class="number">4</span> * <span class="number">3</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>(<span class="number">5</span> + <span class="number">4</span>) * <span class="number">3</span></span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p><strong>Note:</strong> We’ve just covered a lot! Using the interpreter, variables, entering basic data types, doing some basic math….questions? Ask a TA!</p>
+</blockquote>
+<h2 id="Booleans"><a href="#Booleans" class="headerlink" title="Booleans"></a>Booleans</h2><p>So far, the code we’ve written has been <em>unconditional</em>: no choice is getting made in the program–all of the code runs. Python has another data type called a <strong>boolean</strong> that is helpful when writing code that makes decisions. Booleans hold two values: <code>True</code> and <code>False</code>.</p>
+<p>Open the Python interpreter and type these:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>type(<span class="keyword">True</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>type(<span class="keyword">False</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>true</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>false</span><br></pre></td></tr></table></figure></p>
+<h3 id="Testing-for-Equality"><a href="#Testing-for-Equality" class="headerlink" title="Testing for Equality"></a>Testing for Equality</h3><p>You can use booleans to test if Python objects are equal or unequal. The result is a boolean. Try typing these expressions in your Python console (note that the double equals tests for equality):</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">0</span> == <span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span> == <span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">54</span> = <span class="number">42</span></span><br></pre></td></tr></table></figure>
+<p>Use <code>==</code> to test for equality. Recall that <code>=</code> is used for assignment of a variable to a value. This is an important idea and can be a source of bugs until you get used to it: <code>=</code> is assignment, <code>==</code> is comparison.</p>
+<h3 id="Testing-for-Inequality"><a href="#Testing-for-Inequality" class="headerlink" title="Testing for Inequality"></a>Testing for Inequality</h3><p>To test for inequality, use <code>!=</code>:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">"a"</span> != <span class="string">"a"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">"a"</span> != <span class="string">"A"</span></span><br></pre></td></tr></table></figure>
+<p>The above example demonstrates an important point: Python is CASE-SENSITIVE. Uppercase and lowercase matter.</p>
+<h3 id="Comparison-Operators"><a href="#Comparison-Operators" class="headerlink" title="Comparison Operators"></a>Comparison Operators</h3><p>Next, let’s look at comparison operators. <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, and <code>&gt;=</code> have the same meaning as in math class. The result of these tests is a boolean:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span> &gt; <span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">2</span> &gt;= <span class="number">3</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">-1</span> &lt; <span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">.5</span> &lt;= <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<h3 id="Membership-Operators"><a href="#Membership-Operators" class="headerlink" title="Membership Operators"></a>Membership Operators</h3><p>Finally, let’s briefly look at membership operators. You can check for membership using the <code>in</code> keyword, which also results in a boolean:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">"H"</span> <span class="keyword">in</span> <span class="string">"Hello"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">"h"</span> <span class="keyword">in</span> <span class="string">"Hello"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>x = <span class="string">"He"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>x <span class="keyword">in</span> <span class="string">"Hello"</span></span><br></pre></td></tr></table></figure></p>
+<p>Or check for a lack of membership with <code>not in</code>:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">"a"</span> <span class="keyword">not</span> <span class="keyword">in</span> <span class="string">"abcde"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">"Chicago"</span> <span class="keyword">not</span> <span class="keyword">in</span> <span class="string">"Redmond Python Workshop"</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="Operators"><a href="#Operators" class="headerlink" title="Operators"></a>Operators</h2><p>We just introduced some operators that let us further manipulate our data. We’ve outlined some (not all) of the Python operators in the following tables:</p>
+<h3 id="Assignment-Operators"><a href="#Assignment-Operators" class="headerlink" title="Assignment Operators"></a>Assignment Operators</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>=</code></td>
+<td>Assigns values from right side operands to left side operand</td>
+<td><code>c = a + b</code> assigns value of <code>a + b</code> into <code>c</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>+=</code> Add AND</td>
+<td>Adds right operand to the left operand and assign the result to left operand</td>
+<td><code>c += a</code> is equivalent to <code>c = c + a</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-=</code> Subtract AND</td>
+<td>Subtracts right operand from the left operand and assign the result to left operand</td>
+<td><code>c -= a</code> is equivalent to <code>c = c - a</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>*=</code> Multiply AND</td>
+<td>Multiplies right operand with the left operand and assign the result to left operand</td>
+<td><code>c *= a</code> is equivalent to <code>c = c * a</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>/=</code> Divide AND</td>
+<td>Divides left operand with the right operand and assign the result to left operand</td>
+<td><code>c /= a</code>  is equivalent to <code>c = c / a</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>%=</code> Modulus AND</td>
+<td>Calculates modulus using two operands and assign the result to left operand</td>
+<td><code>c %= a</code> is equivalent to <code>c = c % a</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>**=</code> Exponent AND</td>
+<td>Performs exponential calculation on operators and assign value to the left operand</td>
+<td><code>c **= a</code> is equivalent to <code>c = c ** a</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>//=</code> Floor Division</td>
+<td>Performs floor division on operators and assign value to the left operand</td>
+<td><code>c //= a</code> is equivalent to <code>c = c // a</code></td>
+</tr>
+</tbody>
+</table>
+<p>Exercise:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="number">21</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = <span class="number">10</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = <span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = a + b</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c += a</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c *= a</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c /= a</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = <span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c %= a</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c **= a</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c //= a</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c</span><br></pre></td></tr></table></figure></p>
+<h3 id="Comparison-Operators-1"><a href="#Comparison-Operators-1" class="headerlink" title="Comparison Operators"></a>Comparison Operators</h3><p>Assume <code>a = 5</code> and <code>b = 10</code>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>==</code></td>
+<td>If the values of two operands are equal, then the condition becomes true.</td>
+<td><code>a == b</code> evaluates to false.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>!=</code></td>
+<td>If values of two operands are not equal, then condition becomes true.</td>
+<td><code>a != b</code> is true.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&gt;</code></td>
+<td>If the value of left operand is greater than the value of right operand, then condition becomes true.</td>
+<td><code>a &gt; b</code> is not true.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;</code></td>
+<td>If the value of left operand is less than the value of right operand, then condition becomes true.</td>
+<td><code>a &lt; b</code> is true.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&gt;=</code></td>
+<td>If the value of left operand is greater than or equal to the value of right operand, then condition becomes true.</td>
+<td><code>a &gt;= b</code> is not true.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;=</code></td>
+<td>If the value of left operand is less than or equal to the value of right operand, then condition becomes true.</td>
+<td><code>a &lt;= b</code> is true.</td>
+</tr>
+</tbody>
+</table>
+<p>Exercise:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="number">5</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = <span class="number">10</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a == b</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a != b</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = <span class="number">5</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a == b</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a != b</span><br></pre></td></tr></table></figure></p>
+<p><strong>Key Point</strong>: <code>=</code> assigns a value, <code>==</code> tests for equality, <code>!=</code> tests for inequality.</p>
+<h3 id="Logical-Operators"><a href="#Logical-Operators" class="headerlink" title="Logical Operators"></a>Logical Operators</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>and</code></td>
+<td>If both the operands are true then condition becomes true.</td>
+<td><code>x&gt;4 and y&lt;5</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>or</code></td>
+<td>If any of the two operands are non-zero then condition becomes true.</td>
+<td><code>x&gt;4 or y&lt;5</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>not</code></td>
+<td>Used to reverse the logical state of its operand.</td>
+<td><code>not(x and y)</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Identity-Operators"><a href="#Identity-Operators" class="headerlink" title="Identity Operators"></a>Identity Operators</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>is</code></td>
+<td>Evaluates to true if the variables on either side of the operator point to the same object.</td>
+<td>See below.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>is not</code></td>
+<td>Evaluates to false if the variables on either side of the operator point to the same object.</td>
+<td>See below.</td>
+</tr>
+</tbody>
+</table>
+<p>Exercise:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = <span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> b</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = <span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a <span class="keyword">is</span> b</span><br></pre></td></tr></table></figure></p>
+<h2 id="Conditional-Branching"><a href="#Conditional-Branching" class="headerlink" title="Conditional Branching"></a>Conditional Branching</h2><h3 id="Using-if"><a href="#Using-if" class="headerlink" title="Using if"></a>Using <code>if</code></h3><p>Now that we know how to check if something is <code>True</code> or <code>False</code> using booleans and operators, we can use “conditional branching” to make Python execute commands on a conditional basis. Just take a look at the following code:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="number">6</span> &gt; <span class="number">5</span>:</span><br><span class="line">     print(<span class="string">"Six is greater than five!"</span>)</span><br></pre></td></tr></table></figure>
+<p>This is the first piece of Python we’ve written that crosses multiple lines, and the way to enter it at a Python interpreter’s prompt is a little different than single lines of code.</p>
+<p>In the interpreter:</p>
+<ol>
+<li>Type <code>if 6 &gt; 5:</code>, and hit <code>ENTER</code>. The next line will have <code>...</code> as a prompt, instead of the usual <code>&gt;&gt;&gt;</code>. This is Python telling us that we are in the middle of a code block, and so long as we indent our code it should be a part of this code block.</li>
+<li>Type 4 spaces, type <code>print(&quot;Six is greater than five!&quot;)</code>, and then hit <code>ENTER</code> to end the line. Note that spaces are <a href="https://www.python.org/dev/peps/pep-0008/#tabs-or-spaces" target="_blank" rel="noopener">officially the preferred indentation method</a>.</li>
+<li>Finally, hit <code>ENTER</code> again to tell Python you are done with this code block. All together, it will look like this:</li>
+</ol>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> <span class="number">6</span> &gt; <span class="number">5</span>:</span><br><span class="line"><span class="meta">... </span>     print(<span class="string">"Six is greater than five!"</span>)</span><br><span class="line">Six <span class="keyword">is</span> greater than five!</span><br></pre></td></tr></table></figure>
+<p>So what’s going on here? When Python encounters the <code>if</code> keyword, it evaluates the expression following the keyword and before the colon.</p>
+<ul>
+<li>If that expression evaluates to <code>True</code>, Python executes the code in the indented code block under the <code>if</code> line.</li>
+<li>If that expression evaluates to <code>False</code>, Python skips over the code block.</li>
+</ul>
+<p>In this case, because “6 is greater than 5” evaluates to true, Python executes the code block under the if statement, and we see “Six is greater than five!” printed to the screen. Guess what will happen with these other expressions, then type them out and see if your guess was correct:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> <span class="number">0</span> &gt; <span class="number">2</span>:</span><br><span class="line"><span class="meta">... </span>    print(<span class="string">"Zero is greater than two!"</span>)</span><br></pre></td></tr></table></figure>
+<p>Another:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> <span class="string">"banana"</span> <span class="keyword">in</span> <span class="string">"bananarama"</span>:</span><br><span class="line"><span class="meta">... </span>   print(<span class="string">"I miss the 80s."</span>)</span><br></pre></td></tr></table></figure></p>
+<p>One more:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> <span class="string">"Ringo"</span> <span class="keyword">not</span> <span class="keyword">in</span> <span class="string">"John, Paul, and George"</span>:</span><br><span class="line"><span class="meta">... </span>   print(<span class="string">"Ringo wasn't much of a songwriter."</span>)</span><br></pre></td></tr></table></figure></p>
+<h3 id="Using-if-and-else"><a href="#Using-if-and-else" class="headerlink" title="Using if and else"></a>Using <code>if</code> and <code>else</code></h3><p>You can use the <code>else</code> keyword to execute code only when the <code>if</code> expression isn’t <code>True</code>:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>sister_age = <span class="number">15</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>brother_age = <span class="number">12</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> sister_age &gt; brother_age:</span><br><span class="line"><span class="meta">... </span>   print(<span class="string">"sister is older"</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">else</span>:</span><br><span class="line"><span class="meta">... </span>   print(<span class="string">"brother is older"</span>)</span><br></pre></td></tr></table></figure>
+<p>Like with <code>if</code>, the code block under the <code>else</code> statement must be indented so Python knows that it is a part of the <code>else</code> block.</p>
+<h3 id="Using-and-and-or"><a href="#Using-and-and-or" class="headerlink" title="Using and and or"></a>Using <code>and</code> and <code>or</code></h3><p>We’ve been testing single conditions, but we can also test multiple conditions that result in execution of some code. You can check multiple expressions together using the <code>and</code> and <code>or</code> logical operators.</p>
+<ul>
+<li>If two expressions are joined by an <code>and</code>, they <strong>both</strong> have to be <code>True</code> for the overall expression to be <code>True</code>.</li>
+<li>If two expressions are joined by an <code>or</code>, as long as <strong>at least one</strong> is <code>True</code>, the overall expression is <code>True</code>.</li>
+</ul>
+<p>Try typing these out and see what you get:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span> &gt; <span class="number">0</span> <span class="keyword">and</span> <span class="number">1</span> &lt; <span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span> &lt; <span class="number">2</span> <span class="keyword">and</span> <span class="string">"x"</span> <span class="keyword">in</span> <span class="string">"abc"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">"a"</span> <span class="keyword">in</span> <span class="string">"hello"</span> <span class="keyword">or</span> <span class="string">"e"</span> <span class="keyword">in</span> <span class="string">"hello"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span> &lt;= <span class="number">0</span> <span class="keyword">or</span> <span class="string">"a"</span> <span class="keyword">not</span> <span class="keyword">in</span> <span class="string">"abc"</span></span><br></pre></td></tr></table></figure>
+<p>Guess what will happen when you enter these next two examples, and then type them out and see if you are correct. If you have trouble with the indenting, call over a staff member and practice together. It is important to be comfortable with indenting. Indenting is a crucial part of the syntax of Python.</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>temperature = <span class="number">32</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> temperature &gt; <span class="number">60</span> <span class="keyword">and</span> temperature &lt; <span class="number">75</span>:</span><br><span class="line"><span class="meta">... </span>   print(<span class="string">"It's nice and cozy in here!"</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">else</span>:</span><br><span class="line">....    print(<span class="string">"Too extreme for me."</span>)</span><br></pre></td></tr></table></figure>
+<p>One more:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>hour = <span class="number">11</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> hour &lt; <span class="number">7</span> <span class="keyword">or</span> hour &gt; <span class="number">23</span>:</span><br><span class="line"><span class="meta">... </span>   print(<span class="string">"Go away!"</span>)</span><br><span class="line"><span class="meta">... </span>   print(<span class="string">"I'm sleeping!"</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">else</span>:</span><br><span class="line"><span class="meta">... </span>   print(<span class="string">"Welcome to the cheese shop!"</span>)</span><br><span class="line"><span class="meta">... </span>   print(<span class="string">"Can I interest you in some choice gouda?"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>You can have as many lines of code as you want in if-else block, just make sure to indent them so Python knows they are a part of the same indentation block.</p>
+<h3 id="Using-elif-and-else"><a href="#Using-elif-and-else" class="headerlink" title="Using elif and else"></a>Using <code>elif</code> and <code>else</code></h3><p>If you have more than two cases, you can use the <code>elif</code> keyword to check more cases. Think of <code>elif</code> as Python-speak for else if. You can have as many <code>elif</code> cases as you want. Python will go down the code checking each <code>elif</code> until it finds a <code>True</code> condition or reaches the default <code>else</code> block.</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>sister_age = <span class="number">15</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>brother_age = <span class="number">12</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> sister_age &gt; brother_age:</span><br><span class="line"><span class="meta">... </span>   print(<span class="string">"sister is older"</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">elif</span> sister_age == brother_age:</span><br><span class="line"><span class="meta">... </span>   print(<span class="string">"sister and brother are the same age"</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">else</span>:</span><br><span class="line"><span class="meta">... </span>   print(<span class="string">"brother is older"</span>)</span><br></pre></td></tr></table></figure>
+<p>You don’t have to have an <code>else</code> block if you don’t need it. That just means there isn’t default code to execute when none of the <code>if</code> or <code>elif</code>conditions are <code>True</code>:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>color = <span class="string">"orange"</span></span><br><span class="line"><span class="meta">... </span><span class="keyword">if</span> color == <span class="string">"green"</span> <span class="keyword">or</span> color == <span class="string">"red"</span>:</span><br><span class="line"><span class="meta">... </span>   print(<span class="string">"Christmas color!"</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">elif</span> color == <span class="string">"black"</span> <span class="keyword">or</span> color == <span class="string">"orange"</span>:</span><br><span class="line"><span class="meta">... </span>   print(<span class="string">"Halloween color!"</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">elif</span> color == <span class="string">"pink"</span>:</span><br><span class="line"><span class="meta">... </span>   print(<span class="string">"Valentine's Day color!"</span>)</span><br></pre></td></tr></table></figure>
+<p>If <code>color</code> had been “purple”, the code wouldn’t have printed anything. Remember that <code>=</code> is for assignment and <code>==</code> is for comparison.</p>
+<h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><p>Functions are how we perform actions on our data. We’ve been using a function a lot so far: <code>print()</code>. Calling a function is as easy as calling the function name and putting a variable or value between round brackets like we’ve been doing.</p>
+<p>Try the following:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="string">"The number 3: "</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = <span class="number">3</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>type(a)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>type(b)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(a, b)</span><br></pre></td></tr></table></figure></p>
+<p>The values between the <code>()</code> brackets are called “arguments.” Certain functions let us pass arguments to our functions. like so:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>str1 = <span class="string">"Bill is"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="number">50</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>str2 = <span class="string">"years old."</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(str1, a, str2)</span><br></pre></td></tr></table></figure></p>
+<p>There are three basic categories of functions:</p>
+<ul>
+<li>The built-in kind that come with Python when we install it (e.g.<code>print()</code>)</li>
+<li>The kind we write ourselves</li>
+<li>The kind that other people wrote that we can borrow (by importing their code modules and using them in our programs)</li>
+</ul>
+<p>We’ve already introduced the built-in kind. Next, we’ll show you how to write your own. Later, we’ll show you how to import and use functions written by other people.</p>
+<h3 id="Writing-Our-Own-Function"><a href="#Writing-Our-Own-Function" class="headerlink" title="Writing Our Own Function"></a>Writing Our Own Function</h3><p>In the interpreter, write the following code:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">myFirstFunction</span><span class="params">()</span>:</span></span><br><span class="line"><span class="meta">... </span>    print(<span class="string">"Hello!"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>We just wrote our first function! Now call it:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>myFirstFunction()</span><br></pre></td></tr></table></figure></p>
+<p>Our function takes no arguments. Let’s write a function that passes an argument:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">mySecondFunction</span><span class="params">(name)</span>:</span></span><br><span class="line"><span class="meta">... </span>    print(<span class="string">"Hello"</span>, name)</span><br></pre></td></tr></table></figure></p>
+<p>Now let’s run it, passing in the name of your choice:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>mySecondFunction(<span class="string">"Bill Gates"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>Fantastic! You just authored and called your first function that passed an argument.</p>
+<h3 id="Utility-Functions"><a href="#Utility-Functions" class="headerlink" title="Utility Functions"></a>Utility Functions</h3><p>We’ll gradually expand your knowledge of functions, but for now we’ll introduce a few other built-in functions that can help us with numerical types and strings.</p>
+<h4 id="For-Numbers"><a href="#For-Numbers" class="headerlink" title="For Numbers"></a>For Numbers</h4><p>We can convert between numerical types with ease.</p>
+<p>Convert from float to int:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>x = <span class="number">5.5</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>x</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>type(x)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>x = int(x)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>x</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>type(x)</span><br></pre></td></tr></table></figure></p>
+<p>Convert from int to float:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>y = <span class="number">4</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>y</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>type(y)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>y = float(y)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>y</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>type(y)</span><br></pre></td></tr></table></figure></p>
+<h4 id="For-Strings"><a href="#For-Strings" class="headerlink" title="For Strings"></a>For Strings</h4><p><code>upper()</code> and <code>lower()</code> are handy:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>str = <span class="string">"My String"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>str.upper()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>str.lower()</span><br></pre></td></tr></table></figure></p>
+<h2 id="Additional-Concepts"><a href="#Additional-Concepts" class="headerlink" title="Additional Concepts"></a>Additional Concepts</h2><p>Let’s briefly introduce some additional concepts and tools that will help you on your journey with Python.</p>
+<h3 id="Tracebacks"><a href="#Tracebacks" class="headerlink" title="Tracebacks"></a>Tracebacks</h3><p>When you make a mistake and try to run your program, Python will generate a traceback to tell you what went wrong. By now, you may have seen a few of these!</p>
+<p>Open the interpreter and run:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="string">"John"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a + <span class="number">2</span></span><br></pre></td></tr></table></figure></p>
+<p>We see the following error:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">TypeError: must be str, <span class="keyword">not</span> int</span><br></pre></td></tr></table></figure></p>
+<p>The above traceback tells us the following:</p>
+<ul>
+<li>The name of the file where the error occurred: “<stdin>“ (means that the error occurred on input)</stdin></li>
+<li>The line number containing the error: 1</li>
+<li>The name of the module (if applicable, which it’s not here)</li>
+<li>The error type: <code>TypeError</code></li>
+<li>What we did wrong: We tried to perform an operation on one data type that Python wouldn’t allow.</li>
+</ul>
+<p>Tracebacks are invaluable when trying to diagnose why something won’t run.</p>
+<h3 id="Comments"><a href="#Comments" class="headerlink" title="Comments"></a>Comments</h3><p>Comments help us communicate with teammates about what our functions are doing. We’ll use them more when we start running applications in Python files. For now, just know that when you see the following syntax, it’s a comment. There’s no need to enter the code below, just familiarize yourself with the concepts.</p>
+<p>Single line comment:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Here is a comment in python! It's great and is ignored when the program runs!</span></span><br><span class="line">name = <span class="string">"Your Name"</span></span><br><span class="line">print(name)</span><br><span class="line">print(<span class="string">"Your Name"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>This is an in-line comment:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">"Your Name"</span></span><br><span class="line">print(name) <span class="comment"># Here is an in-line comment!</span></span><br><span class="line">print(<span class="string">"Your Name"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>Here is a multiline comment that uses three apostrophes above and below the comment:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">This is a multiline comment for longer comments that you want to put in your code. Commenting code is important when you're sharing code with multiple people. Because we're using the three apostrophes, we can make this comment as looooooooooong as we want!</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">name = <span class="string">"Your Name"</span></span><br><span class="line">print(name)</span><br><span class="line">print(<span class="string">"Your Name"</span>)</span><br></pre></td></tr></table></figure></p>
+<h1 id="Wrap-up"><a href="#Wrap-up" class="headerlink" title="Wrap-up"></a>Wrap-up</h1><p>We just covered a LOT of material. Remember:</p>
+<ol>
+<li>We’ve just barely scratched the surface here. We have have skipped some things. That’s ok! This is supposed to be an introduction. Over time, you will fill in the gaps.</li>
+<li>If something is unclear, <strong>ask for help</strong>. That’s why we’re here.</li>
+<li>If you don’t understand something or feel overwhelmed, <strong>keep at it</strong>. This is just the beginning of a long journey towards learning the ins and outs of Python.</li>
+</ol>
+<h2 id="Additional-Resources"><a href="#Additional-Resources" class="headerlink" title="Additional Resources"></a>Additional Resources</h2><p>There is no shortage of additional resources on Python. It helps to read multiple articles and tutorials on the core concepts mentioned above, so we encourage you to read and explore the following:</p>
+<ul>
+<li><a href="https://wiki.python.org/moin/BeginnersGuide/NonProgrammers" target="_blank" rel="noopener">Python Guide for Beginners - Non-Programmers</a></li>
+<li><a href="https://wiki.python.org/moin/BeginnersGuide/Programmers" target="_blank" rel="noopener">Python Guide for Beginners - Programmers</a></li>
+</ul>
+<h3 id="Coding-Exercises"><a href="#Coding-Exercises" class="headerlink" title="Coding Exercises"></a>Coding Exercises</h3><ul>
+<li><a href="https://www.codingbat.com/python" target="_blank" rel="noopener">Coding Bat</a></li>
+<li><a href="https://hackerrank.com" target="_blank" rel="noopener">Hacker Rank</a></li>
+</ul>
+<h3 id="Other-Tools"><a href="#Other-Tools" class="headerlink" title="Other Tools"></a>Other Tools</h3><ul>
+<li><a href="https://www.codeschool.com/courses/try-git" target="_blank" rel="noopener">Try Git</a></li>
+</ul>
+
+
+<!-- Comments -->
+<div>
+    
+    <hr />
+    <h3>Comments:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+</div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <section>
+            <h2>About</h2>
+            <div>
+                We are a Python meetup group in Redmond, WA, USA. Join us at <a href="https://www.meetup.com/Redmond-Python-User-Group/" target=_blank>Meetup.com</a>. Redmond Python is not affiliated with the <a href="https://www.python.org/" target=_blank>Python Software Foundation</a>, although we are big fans of their work.
+            </div>
+        </section>
+        <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+                
+                
+                
+                
+                
+                    <li><a href="https://github.com/mktp/rp2018" class="icon style2 fa-github" target="_blank" ><span class="label">GitHub</span></a></li>
+                
+                
+                
+                
+                
+                    <li><a href="www.meetup.com/Redmond-Python-User-Group" class="icon style2 fa-envelope-o" target="_blank" ><span class="label">Email</span></a></li>
+                
+                
+            </ul>
+        </section>
+        <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved</li>
+            <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+            <li>Hexo: <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></li>
+        </ul>
+    </div>
+</footer>
+    </div>
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- skel -->
+<script src="/js/skel.min.js"></script>
+
+<!-- Custom Code -->
+<script src="/js/util.js"></script>
+
+<!--[if lte IE 8]>
+<script src="/js/ie/respond.min.js"></script>
+<![endif]-->
+
+<!-- Custom Code -->
+<script src="/js/main.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'redmondpython';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+</body>
+
+</html>

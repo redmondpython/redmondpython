@@ -64,7 +64,7 @@ date: 2018-03-24 18:42:51
 
 ## Let's put it all together
 
-Walk through [state_capitals.py](/code/capitals.py). Copy and paste this whole file in your text editor and save it as `state_capitals.py`.
+Walk through [state_capitals.py](capitals.py). Copy and paste this whole file in your text editor and save it as `state_capitals.py`.
 
 * create a dictionary of states & capitals 
 * import a module
